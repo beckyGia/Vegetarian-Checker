@@ -1,0 +1,156 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear Fix Hack */
+.clearfix::after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/***************************************************/
+/* BASE STYLES
+/***************************************************/
+body {
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 150vh;
+  background: linear-gradient(lightblue, white);
+}
+
+
+/***************************************************/
+/* ADDITIONAL STYLES
+/***************************************************/
+input {
+  width: 200px;
+}
+
+button {
+  margin: 20px auto;
+  display: block;
+}
+
+img {
+  max-height: 300px;
+}
+
+.title {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+table {
+  margin: 20px auto;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+th {
+  background-color: rgb(155, 177, 199)
+}
+
+tr:nth-child(even) {
+  background-color: lightsteelblue;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(159, 176, 199);
+}
+
+tr>:nth-child(1) {
+  padding: 0 1.5rem;
+}
+
+.img-ingred {
+  display: flex;
+  flex-direction: row;
+}
+
+#product-img {
+  margin-left: 2.5rem;
+  margin-right: 1rem;
+  flex: 20%;
+}
+
+table {
+  flex: 50%;
+  margin-right: 2.5rem;
+  height: 300px;
+  position: relative;
+  bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  left: 10px;
+  display: inline;
+  color: rgb(5, 79, 54);
+}
+
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 50px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+p {
+  padding: 0 4rem;
+}
+
+.reg-text {
+  margin: 0 4px;
+  line-height: 2rem;
+}
+
+h3 {
+  text-align: left;
+  margin-left: 3rem;
+}
+
+.hover {
+  font-size: 1rem;
+}
+
+.turn-red {
+  color: red;
+}
+
+.turn-yellow {
+  color: yellow;
+}

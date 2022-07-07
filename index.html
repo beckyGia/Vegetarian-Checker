@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Vegetarian Checker</title>
+</head>
+
+<body>
+  <h1>MyNutritionPlan</h1>
+
+  <label for="barcode">Enter a UPC barcode number (12 digits)</label>
+  <input type="number" id="barcode" name="barcode">
+  <!--The onclick event occurs when the user clicks on an element.-->
+  <button type="button">Get Value</button>
+
+  <div class="title">
+    <h2 id="product-name"></h2>
+  </div>
+  <div class="img-ingred">
+    <img src="" alt="" id="product-img">
+    <table id="nutrition-table" class="hidden">
+      <tr>
+        <th>Nutrition Facts</th>
+        <th>Amount (100 g)</th>
+      </tr>
+    </table>
+  </div>
+  <div id="show" class="ingredients hidden">
+    <h3>Ingredients List: <span class="hover">(hover over ingredient to check if it is vegetarian)</span></h3>
+    <p id="ingredient-list"></p>
+  </div>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
